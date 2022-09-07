@@ -19,7 +19,7 @@ Project was made in almoust pure PHP, CSS and HTML with minimal amount of js.
 
 4. Stop Apache in usbwebserver and run script.bat
 
-5. Go to "USBWebserver v8.6.6\php" dictionary, find php.ini file. Open in text editor and find line: extension_dir = "C:/Users/sqann/Desktop/USBWebserver     v8.6.6\php\ext\".
-Replace C:/Users/sqann/Desktop/ on path where you unzip USBWebserver. For example: extension_dir = "E:\Download\USBWebserver v8.6.6\php\ext\"
+5. Go to "USBWebserver v8.6.6\php" directory, find php.ini file. Open in text editor and find line: extension_dir = "C:/Users/sqann/Desktop/USBWebserver     v8.6.6\php\ext\".
+Replace C:/Users/sqann/Desktop/ on path, where USBWebserver was unziped. For example: extension_dir = "E:\Download\USBWebserver v8.6.6\php\ext\"
 
 6. Run Apache in usbwebserver, and type in browser address bar: http://localhost/econote/ 
