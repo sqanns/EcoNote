@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;401&display=swap');
+
+:root {
+  --green: #0bda8f;
+  --dark-green: #0daa71;
+  --blue: #4630eb;
+  --white: #fff;
+  --smoke: #e9eaed;
+  --light-gray: #bebebe;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  color: #333;
+  background-color: var(--smoke);
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 44px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.2s;
+}
+
+h1:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+.far {
+  margin-right: 20px;
+}
+
+form {
+  background-color: white;
+  padding: 20px 30px 20px 30px;
+  color: #222;
+}
+
+form li {
+  padding: 0;
+  display: block;
+  list-style: none;
+  margin: 10px 0 0;
+}
+
+form label {
+  margin: 0 0 3px 0;
+  padding: 0;
+  display: block;
+  color: #222;
+  font-weight: normal;
+}
+
+form input[type=submit]:hover {
+  cursor: pointer;
+}
+
+form input[type=text],
+form input[type=date],
+form input[type=datetime],
+form input[type=number],
+form input[type=search],
+form input[type=time],
+form input[type=url],
+form input[type=email],
+textarea,
+select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 2px solid var(--light-gray);
+  padding: 7px;
+  margin: 0;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+  outline: none;
+}
+
+form input[type=text]:focus,
+form input[type=date]:focus,
+form input[type=datetime]:focus,
+form input[type=number]:focus,
+form input[type=search]:focus,
+form input[type=time]:focus,
+form input[type=url]:focus,
+form input[type=email]:focus,
+form textarea:focus,
+form select:focus {
+  border: 2px solid var(--blue);
+}
+
+form input[type=text]:invalid:focus,
+form input[type=date]:invalid,
+form input[type=datetime]:invalid,
+form input[type=number]:invalid,
+form input[type=search]:invalid,
+form input[type=time]:invalid,
+form input[type=url]:invalid,
+form input[type=email]:invalid,
+form textarea:invalid,
+form select:invalid {
+  border: 2px solid red;
+}
+
+form .field-long {
+  width: 100%;
+}
+
+form .field-medium {
+  width: 84%;
+}
+
+form .field-textarea {
+  height: 250px;
+}
+
+form input[type=submit],
+form input[type=button] {
+  background: var(--green);
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 12px 40px;
+  margin: 5px 0;
+}
+
+form input[type=submit]:hover,
+form input[type=button]:hover {
+  background: var(--dark-green);
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+form>div {
+  font-weight: bold;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+form>div:first-child {
+  margin-bottom: 20px;
+}
+
+form>div:first-child>label:first-child {
+  text-transform: uppercase;
+  font-weight: normal
+}
+
+form>div:first-child>label:first-child>input {
+  margin-left: 14px;
+  font-family: montserrat, sans-serif;
+  outline: none;
+  font-size: 22px;
+}
+
+form>div:first-child>label:first-child>input:focus {
+  box-shadow: 0 0 0 2px var(--green);
+}
+
+form.search {
+  background-color: transparent;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 5px dashed #000000;
+  padding: 0;
+}
+
+header.note {
+  padding: 20px 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+nav {
+  width: 20%;
+  background-color: white;
+  overflow: hidden;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul a {
+  display: block;
+  color: var(--green);
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 16px 0;
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  color: var(--dark-green);
+}
+
+section {
+  width: calc(80% - 20px);
+  margin-left: 20px;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: var(--green);
+}
+
+footer p {
+  text-align: center;
+  color: var(--white);
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+th {
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 14px;
+  color: #222;
+}
+
+tr>td:nth-child(1),
+tr>th:nth-child(1) {
+  width: 50px;
+}
+
+tr>td:nth-child(2) {
+  width: 50%;
+  text-align: left;
+}
+
+tr>th:nth-child(2) {
+  width: 50%;
+}
+
+tr>td:nth-child(3) {
+  font-style: italic;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: normal;
+  align-content: center;
+}
+
+button.pagination {
+  width: 50px;
+}
+
+.pagination li {
+  flex: 0 0 auto;
+  margin: 10px;
+}
+
+.pagination li button {
+  cursor: pointer;
+}
+
+.settings-form label {
+  display: inline-block;
+}
+
+button {
+  border: none;
+  background-color: var(--green);
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--dark-green);
+}
+
+form.note-form li label {
+  font-size: 18px;
+}
+
+form.note-form input,
+form.note-form textarea {
+  font-size: 16px;
+}
+
+.delete ul,
+.show ul {
+  list-style: none;
+}
+
+.delete button,
+.show button {
+  padding: 8px 12px;
+}
+
+div.all-notes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.all-notes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-note {
+  display: flex;
+  width: 200px;
+  height: 250px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fcfcfc;
+  margin: 10px;
+}
+
+.display-note:hover {
+  cursor: pointer;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 0 6px var(--blue);
+  box-shadow: 3px 3px 0 6px var(--blue);
+}
+
+.display-note:hover::before{
+  content: "Edytuj/Podejrzyj";
+  position: absolute;
+  display: block;
+  padding-bottom: 1px;
+  width: 200px;
+  height: 20px;
+  color: whitesmoke;
+  z-index: 100;
+  background-color: var(--green);
+  text-align: center;
+  transform: translateY(229px);
+}
+
+.display-note header {
+  width: 100%;
+}
+
+.display-note p {
+  padding: 6%;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 0.8em;
+}
+
+p.notice {
+  color: whitesmoke;
+  background-color: var(--green);
+}
+
+p.error {
+  color: whitesmoke;
+  background-color: red;
+}
+
+button.pagination {
+  margin: 0 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button.inactive {
+  background-color: #BEBEBE;
+}
+
+a button {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.disable-link {
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1370px) {
+    form .field-medium {
+      width: 83.5%;
+    }
+
+  form input[type=submit].squeeze {
+    width: 14.5%;
+    text-align: center;
+    padding: 12px 0;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+
+  nav {
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+
+  nav li {
+    margin: 0 20px;
+  }
+
+  main section {
+    width: 100%;
+    margin: 0;
+  }
+
+  main h3 {
+    text-align: center;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  form ul {
+    padding: 0;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+    form.search {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px 30px;
+    }
+
+  form.search > input {
+    margin: 5px;
+    width: 100% !important;
+  }
+
+  form.note-form input {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  @media screen and (max-width: 456px) {
+    .display-note {
+      width: calc(100vw - 50px);
+      height: 350px;
+      font-size: 144%;
+    }
+
+    button.pagination {
+      transform: scale(1.18);
+    }
+
+    .display-note:hover::before{
+      width: 240px;
+      height: 34px;
+      transform: translateY(300px);
+    }
+  }
+}
